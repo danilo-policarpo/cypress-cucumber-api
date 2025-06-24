@@ -21,7 +21,11 @@ class CarrinhoPage {
     cy.get('#cart-list > .text-center > p').should('be.visible')
   }
 
-  
+   
+  addtwoCarrinho() {
+    cy.get(':nth-child(1) > .card > .card-body > .btn').click()
+    cy.get(':nth-child(2) > .card > .card-body > .btn').click()
+  }
     
 
   

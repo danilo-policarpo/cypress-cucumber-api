@@ -23,4 +23,16 @@ Then("vejo produto removido com sucesso", () => {
   CarrinhoPage.CarrinhoVazio
 })
 
+When("acessar o carrinho sem produto adicionado", () => {
+  CarrinhoPage.MenuCarrinho
+})
+
+Then("vejo carrinho sem produto", () => {
+  CarrinhoPage.CarrinhoVazio
+})
+
+When("adicionar um ou mais produto no carrinho", () => {
+  
+})
+
  

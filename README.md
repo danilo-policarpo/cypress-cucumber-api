@@ -1,12 +1,12 @@
-# Cypress  + Cucumber 
+# Cypress  + Cucumber and API Test
 
-Conteúdo produzido para o desafio da Keeggo
+Content produced for the Keeggo challenge
 
 # Requirements
 
 The minimum requirements are:
 
-* node 
+* Node 
 * Cypress
 
 # Setup
@@ -22,6 +22,15 @@ To run the tests in headless mode, go to main directory and execute:
 ```
 npm run execution
 ```
+
+Result and coverage
+
+```
+open folder in cucumber-results/report
+```
+
+![Tela de Login](report_web.png)
+
 
 To open the Cypress IDE, run:
 
@@ -39,6 +48,12 @@ To open the Cypress IDE, run:
 ```
 npm run test:api
 ```
+Result and coverage
+```
+open folder in reports/index.html
+```
+
+![Tela de Login](api_report.png)
 
 # Links
     
