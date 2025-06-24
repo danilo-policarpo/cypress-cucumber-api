@@ -1,0 +1,37 @@
+{
+  "description": "Cypress + Cucumber project",
+  "author": "Danilo POlicarpo",
+ 
+  "scripts": {
+    "execution": "npx cypress run --browser=chrome",
+    "open": "npx cypress open",
+
+    "open:api" : "npx cypress open --config-file cypress.config.api.js",
+    "test:api" : "npx cypress run --config-file cypress.config.api.js"
+
+  },
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "22.0.0",
+    "@bahmutov/cypress-esbuild-preprocessor": "2.2.4",
+    "@esbuild-plugins/node-modules-polyfill": "0.2.2",
+    "cypress": "14.0.1"
+  },
+  "cypress-cucumber-preprocessor": {
+    "omitFiltered": true,
+    "stepDefinitions": [
+        "cypress/e2e/step_definitions/**/*.{js,ts}"
+    ],
+    "messages": {
+        "enabled": true,
+        "output": "cypress/cucumber-results/cucumber-messages.ndjson"
+    },
+    "json": {
+        "enabled": true,
+        "output": "cypress/cucumber-results/cucumber.json"
+    },
+    "html": {
+      "enabled": true,
+      "output": "cypress/cucumber-results/report.html"
+    }
+  }
+}
