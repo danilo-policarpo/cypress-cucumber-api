@@ -1,6 +1,6 @@
 # Cypress  + Cucumber and API Test
 
-Content produced for the Keeggo challenge
+Content produced for API and Web template with cucumber
 
 # Requirements
 
